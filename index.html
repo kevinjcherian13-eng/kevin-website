@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kevin J Cherian | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body onload="checkLogin()">
+
+<!-- 🔐 LOGIN SCREEN -->
+<div id="loginPage" class="login-page">
+  <h2>Login Required</h2>
+  <p>Login using Gmail & Phone Number</p>
+
+  <form onsubmit="return loginUser()">
+    <input type="email" id="loginEmail" placeholder="Enter Gmail" required>
+    <input type="tel" id="loginPhone" placeholder="Enter Phone Number" required>
+    <button type="submit">Login</button>
+  </form>
+
+  <p id="loginError"></p>
+</div>
+
+<!-- 🌐 MAIN WEBSITE -->
+<div id="mainSite" style="display:none;">
+
+<nav>
+  <h2 class="logo">Kevin<span>.</span></h2>
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#journey">Journey</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#" onclick="logout()">Logout</a></li>
+  </ul>
+</nav>
+
+<section id="hero" class="hero">
+  <h1>Hi, I'm <span>Kevin J Cherian</span></h1>
+  <p>15-year-old Student • Tech Enthusiast • Teenager</p>
+</section>
+
+<section id="about" class="section about-section">
+  <h2>About Me</h2>
+
+  <div class="about-container">
+    <img src="kevin.jpg" alt="Kevin J Cherian">
+
+    <div class="about-text">
+      <p>
+        My name is <strong>Kevin J Cherian</strong>. I am a 15-year-old student
+        and a teenager passionate about technology and computers.
+      </p>
+      <p>
+        I enjoy web development, programming, and learning how real-world
+        software systems work.
+      </p>
+      <p>
+        Along with academics, I continuously improve my technical skills
+        step by step.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="journey" class="section journey-section">
+  <h2>My Learning Journey</h2>
+  <p>
+    My interest in technology started with curiosity about games and websites.
+    I wanted to understand how they work internally.
+  </p>
+  <p>
+    I started learning HTML, CSS, and Python and continue improving every day.
+  </p>
+</section>
+
+<section id="work" class="section dark">
+  <h2>What I Do</h2>
+
+  <div class="projects">
+    <div class="project-card">
+      <h3>Web Development</h3>
+      <p>Building responsive and clean websites using HTML & CSS.</p>
+    </div>
+    <div class="project-card">
+      <h3>Game Testing</h3>
+      <p>Testing games for bugs, performance, and user experience.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section skills-section">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Python (Expert)</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Web Development</span>
+    <span>Game Testing</span>
+  </div>
+</section>
+
+<section id="contact" class="section dark">
+  <h2>Contact</h2>
+  <p>📞 +91 7012514843</p>
+  <p>📧 kevinjcherian13@gmail.com</p>
+
+  <div class="social-links">
+    <a href="https://instagram.com/i.kevinjc" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://instagram.com/ft.symmm" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Kevin J Cherian</p>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
